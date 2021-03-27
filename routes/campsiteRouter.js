@@ -230,7 +230,7 @@ campsiteRouter
 			.then(campsite => {
 				if (campsite && campsite.comments.id(req.params.commentId)) {
 					if (
-						camspite.comments
+						campsite.comments
 							.id(req.params.commentId)
 							.author._id.equals(req.user._id)
 					) {
